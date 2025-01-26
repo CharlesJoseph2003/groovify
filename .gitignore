@@ -24,6 +24,11 @@ var/
 .installed.cfg
 *.egg
 
+# Virtual Environment
+venv/
+**/venv/
+.venv
+
 # Node
 node_modules/
 npm-debug.log*
