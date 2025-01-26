@@ -8,6 +8,71 @@ Moodify is a web-based tool that allows users to transform a YouTube video or so
 - Loading animation while processing
 - Options to save, retry, or share the audio clip
 
+## Setup Instructions
+
+### Backend Setup
+
+1. Navigate to the backend directory:
+```bash
+cd backend
+```
+
+2. Create a virtual environment:
+```bash
+python -m venv venv
+```
+
+3. Activate the virtual environment:
+- Windows:
+```bash
+venv\Scripts\activate
+```
+- Unix/MacOS:
+```bash
+source venv/bin/activate
+```
+
+4. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+5. Create a `.env` file in the backend directory with the following content:
+```
+RAPIDAPI_KEY=your_api_key_here
+```
+
+### Frontend Setup
+
+1. Navigate to the frontend directory:
+```bash
+cd frontend
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+## Running the Application
+
+1. Start the backend server (from the backend directory):
+```bash
+python app.py
+```
+
+2. Open `frontend/index.html` in your web browser
+
+## Environment Variables
+
+The following environment variables are required:
+
+- `RAPIDAPI_KEY`: Your RapidAPI key for accessing music services
+
+## Security Note
+
+Never commit the `.env` file or expose your API keys. The `.env` file is included in `.gitignore` to prevent accidental commits.
+
 ## Installation
 1. Clone the repository.
 2. Open `index.html` in your browser.
